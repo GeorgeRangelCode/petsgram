@@ -1,4 +1,4 @@
-# Pasos para iniciar nuestro proyecto:
+# Pasos para instalar webpack:
 
 ## Paso 1:
 
@@ -56,4 +56,44 @@ Añadiremos dos nuevos scripts in package.json llamados:
     "build": "webpack",
     "dev": "webpack-dev-server"
   }
+```
+
+# Instalación de React y Babel
+
+Ahora vamos a configurar React instalando las dependencias
+
+```bash
+npm i react react-dom
+```
+
+Babel para poder transpilar código jsx a JavaScript Vanilla con:
+
+```bash
+npm i @babel/core @babel/preset-env babel-loader @babel/preset-react --save-dev
+```
+
+Ahora añadiremos en nuestro webpack.config.js lo siguiente:
+
+```js
+{/*...*/}
+module.exports = {
+  {/*...*/}
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
 ```
