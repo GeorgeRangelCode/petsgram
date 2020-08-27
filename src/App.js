@@ -1,12 +1,14 @@
 import React from 'react'
 import { ListOfCategories } from './components/ListOfCategories'
-import { GlobalStyle } from './components/GlobalStyles'
 import { ListOfPhotoCards } from './components/ListOfPhotoCards'
+import { Logo } from './components/Logo'
+import { GlobalStyle } from './components/GlobalStyles'
 
 export const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Logo />
       <ListOfCategories />
       <ListOfPhotoCards />
     </>
