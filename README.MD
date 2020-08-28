@@ -13,7 +13,7 @@ npm i webpack wepack-cli --save-dev.
 Crearemos una carpeta llama src y dentro de ella un archivo index.js en el cual colocaremos solo un
 
 ```js
-console.log('Empezamos el curso!').
+console.log('Empezamos!').
 ```
 
 ## Paso 3:
