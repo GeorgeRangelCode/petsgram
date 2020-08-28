@@ -1,9 +1,10 @@
 import React from 'react'
 import { Category } from '../Category'
 import { List, Item } from './styles'
-import { categories } from '../../db.json'
+import { useCategories } from '../../hooks/useCategories'
 
 export const ListOfCategories = () => {
+  const { categories } = useCategories()
   return (
     <List>
       {
