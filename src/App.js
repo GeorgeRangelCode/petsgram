@@ -8,7 +8,6 @@ import { GlobalStyle } from "./components/GlobalStyles";
 export const App = () => {
   const urlParams = new window.URLSearchParams(window.location.search);
   const detailId = urlParams.get("detail");
-  console.log("App -> detailId", detailId);
 
   return (
     <>
