@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "lint": "standard",
-    "dev": "webpack-dev-server --history-api-fallback"
+    "dev": "webpack-dev-server --history-api-fallback",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s"
   },
   "keywords": [],
   "author": "",
