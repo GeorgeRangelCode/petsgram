@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     padding-bottom: 10px;
   }
 
-  ._orientationLeft_0a5b.wrap_c0eb {
+  ._orientationRight_3297.wrap_c0 {
     bottom: 5% !important;
   }
 `;
