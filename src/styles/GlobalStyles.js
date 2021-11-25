@@ -29,4 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     padding-bottom: 10px;
   }
+
+  ._orientationLeft_0a5b.wrap_c0eb {
+    bottom: 5% !important;
+  }
 `;
