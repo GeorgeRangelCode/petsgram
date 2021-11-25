@@ -7,9 +7,9 @@ export const useCategoriesData = () => {
   useEffect(() => {
     setLoading(true);
     window
-      .fetch("https://petgram-server-edsf8xpy2.now.sh/categories")
-      .then((response) => response.json())
-      .then((data) => {
+      .fetch("https://api-petsgram.vercel.app/categories")
+      .then(response => response.json())
+      .then(data => {
         setCategories(data);
         setLoading(false);
       });
